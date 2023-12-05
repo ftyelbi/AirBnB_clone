@@ -8,12 +8,6 @@ class BaseModel:
     """Defines all common methods for other classes"""
 
     def __init__(self, *args, **kwargs):
-<<<<<<< HEAD
-=======
-        """Assigns unique id
-        assigns current datetime when instance is created
-        assigns current datetime when instance is updated
->>>>>>> master
         """
         Initializing the class BaseModel
         """
