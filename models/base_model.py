@@ -7,7 +7,7 @@ from datetime import datetime
 class BaseModel:
     """Defines all common methods for other classes"""
 
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """Assigns unique id
         assigns current datetime when instance is created
         assigns current datetime when instance is updated
