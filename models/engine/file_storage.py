@@ -17,9 +17,10 @@ class FileStorage:
     def classes(self):
         """Returns a dictionary of classes"""
         from models.base_model import BaseModel
-
+        from models.user import User
         classes = {
                 'BaseModel': BaseModel,
+                'User': User,
 
                 }
         return classes
