@@ -40,4 +40,3 @@ class FileStorage:
                 FileStorage.__objects = data
         except FileNotFoundError:
             pass
-

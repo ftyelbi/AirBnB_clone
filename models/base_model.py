@@ -48,4 +48,3 @@ class BaseModel:
         key_dict['updated_at'] = self.updated_at.isoformat()
 
         return key_dict
-
