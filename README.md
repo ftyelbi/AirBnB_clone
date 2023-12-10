@@ -26,5 +26,5 @@ The console works both in interactive and non-interactive mode, just like a Unix
 - engine/file\_storage: Main storage and reload script
 
 # TESTING
-- $python3 unittest -m discover tests: To run all tests at the same time
-- $python3 unittest -m tests/test_base_model.py : To run one specific set of tests at a time
+- $python3 -m unittest discover tests: To run all tests at the same time
+- $python3 -m unittest tests/test_base_model.py : To run one specific set of tests at a time
