@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import json
+import os
 
 class FileStorage:
     __file_path = "storage.json"
@@ -43,10 +44,11 @@ class FileStorage:
     def reload(self):
         """Deserializes JSON file to instances and stores in __objects"""
         try:
-            with open(FileStorage.__file_path, 'r') as file:
-                data = json.load(file)
-                data = {key: self.classes()[value["__class__"]](**value)
-                          for key, value in data.items()}
-                FileStorage.__objects = data
+            if os.path.exists(FileStorage.__file_path):
+                with open(FileStorage.__file_path, 'r') as file:
+                    data = json.load(file)
+                    data = key: self.classes()[value["__class__"]](**value)
+                           for key, value in data.items()}
+                    FileStorage.__objects = data
         except FileNotFoundError:
             pass
